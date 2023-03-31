@@ -20,7 +20,7 @@ const GirlsABC = () => {
 
   const getData = async (id, currentPage) => {
     try {
-      const response = await axios.get(`${process.env.REACT_APP_URL_SERVER}/names/girls?id=${id}&page=${currentPage}`);
+      const response = await axios.get(`${process.env.REACT_APP_URL_SERVER}/names/boys?id=${id}&page=${currentPage}`);
       const data = response.data.allNames;
 
       setNewData(data)
@@ -43,7 +43,7 @@ const GirlsABC = () => {
   return (
     <div className='container pt-3'>
       <div className='section-title-main heading-by-abc'>
-        <h2 className='' >GIRLS NAMES STARTING WITH {`"${id}"`}</h2>
+        <h2 className='' >BOYS NAMES STARTING WITH {`"${id}"`}</h2>
         <h3><span>کے ساتھ شروع ہونے والے نام </span>{id}</h3>
       </div>
       <div className='d-flex mt-3 mb-3'>

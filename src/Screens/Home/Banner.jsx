@@ -25,7 +25,7 @@ const Banner = () => {
       return;
  }
     try {
-      const response = await axios.get(`${process.env.REACT_APP_URL_SERVER}/names/search/girls`, {
+      const response = await axios.get(`${process.env.REACT_APP_URL_SERVER}/names/search/boys`, {
         params: { search: query },
       });
       console.log(searchResults)
@@ -41,7 +41,7 @@ const Banner = () => {
     if(searchResults.length<1) 
     swal({
       icon: "error",
-      title: "Are you sure this is a girl name?",
+      title: "Are you sure this is a boy name?",
       text: "Name is not available!",
 
     });
@@ -53,8 +53,8 @@ const Banner = () => {
   return (
     <div>
       <div className='banner-container'>
-        <h2 className='banner-text'>Discover meaningful Muslim Baby <span className='color-one'>Girls Name </span></h2>
-        <h2 className='banner-urdu'>بچیوں کے خوبصورت اسلامی نام</h2>
+        <h2 className='banner-text'>Discover meaningful Muslim Baby <span className='color-one'>Boys Name </span></h2>
+        <h2 className='banner-urdu'>بچوں کے خوبصورت اسلامی نام</h2>
         <div class="input-group mt-3 search-field">
           <input value={searchQuery}
             onChange={handleSearch} 

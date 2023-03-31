@@ -4,162 +4,160 @@ const FiftyNames = () => {
   return (
     <div className='container pt-3' data-aos="fade-up">
       <div className='section-title-main'>
-        <h2 >25 Beautiful and Unique Urdu Names for Baby Girls</h2>
+        <h2 >25 Beautiful and Unique Urdu Names for Baby Boy</h2>
       </div>
       <div className='text-left para'>
-      Choosing a name for your baby girl is an exciting and important decision. If you want to honor your Urdu heritage or are simply looking for a beautiful and unique name for your little girl, consider choosing an Urdu name. In this article, we've compiled a list of 50 beautiful and unique Urdu names for baby girls, along with their meanings and origins.
+      Choosing a name for your baby boy is an exciting and important decision. If you want to honor your Urdu heritage or are simply looking for a beautiful and unique name for your little girl, consider choosing an Urdu name. In this article, we've compiled a list of 50 beautiful and unique Urdu names for baby boys, along with their meanings and origins.
       </div>
       <div className='text-left pt-3'>
         <h5 className='name pb-3'>
-          Aiza
+        Aayan
         </h5>
         <p className='meaning pb-3'>
-          Aiza means "honorable" or "respectable" and is a pretty and unique name for baby girls.
+        Aayan means "God's gift" or "reward".
         </p>
         <h5 className='name pb-3'>
-        Aleena
+        Anas
         </h5>
         <p className='meaning pb-3'>
-        Aleena means "soft" or "delicate" and is a beautiful and elegant name for baby girls.
+        Anas means "friendly" or "companion" and is a popular name in Islamic culture.
         </p>
         <h5 className='name pb-3'>
-          Anaya
+        Areeb
         </h5>
         <p className='meaning pb-3'>
-        Anaya means "care" or "protection" and is a lovely and meaningful name for baby girls.
+        Areeb means "wise" or "intelligent" and is a unique and meaningful name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Areeba
+        Asim
         </h5>
         <p className='meaning pb-3'>
-        Areeba means "wise" or "intelligent" and is a pretty and unique name for baby girls.
+        Asim means "protector" or "guardian" and is a strong and meaningful name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Arisha
+        Azlan
         </h5>
         <p className='meaning pb-3'>
-        Arisha means "throne" or "heavenly" and is a beautiful and meaningful name for baby girls.
+        Azlan means "lion" and is a unique and strong name for baby boys.
+Daanish - Daanish means "knowledge" or "wisdom" and is a meaningful and unique name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Beenish
+        Danish
         </h5>
         <p className='meaning pb-3'>
-        Beenish means "intelligent" or "wise" and is a pretty and unique name for baby girls.
+        Danish means "knowledgeable" or "intelligent" and is a popular and meaningful name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Fariha
+        Ehtesham
         </h5>
         <p className='meaning pb-3'>
-        Fariha means "happy" or "joyful" and is a lovely and meaningful name for baby girls.
+        Ehtesham means "respect" or "honor" and is a beautiful and meaningful name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Ghazala
+        Faateh
         </h5>
         <p className='meaning pb-3'>
-        Ghazala means "gazelle" or "elegant" and is a beautiful and unique name for baby girls.
+        Faateh means "victorious" or "successful" and is a strong and meaningful name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Hania
-        </h5>
+        Faris
+                </h5>
         <p className='meaning pb-3'>
-        Hania means "happiness" or "joy" and is a pretty and unique name for baby girls.
+        Faris means "knight" or "horseman" and is a strong and unique name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Hira
+        Fawad
         </h5>
         <p className='meaning pb-3'>
-        Hira means "diamond" or "precious stone" and is a beautiful and meaningful name for baby girls.
+        Fawad means "heart" or "soul" and is a meaningful and unique name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Javeria
+        Ghazi
         </h5>
         <p className='meaning pb-3'>
-        Javeria means "beloved" or "friend" and is a pretty and unique name for baby girls.
+        Ghazi means "victorious" or "conqueror" and is a traditional and meaningful name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Mahnoor
+        Haroon
         </h5>
         <p className='meaning pb-3'>
-        Mahnoor means "moonlight" or "moon's glow" and is a lovely and elegant name for baby girls.
+        Haroon means "hope" or "prophet Aaron" and is a popular and meaningful name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Rida
+        Hoorain
         </h5>
         <p className='meaning pb-3'>
-        Rida means "contentment" or "satisfaction" and is a pretty and unique name for baby girls.
+        Hoorain means "heavenly" or "angelic" and is a unique and meaningful name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Sabiha
-        </h5>
+        Huzaifa
+                </h5>
         <p className='meaning pb-3'>
-        Sabiha means "beautiful" or "graceful" and is a lovely and elegant name for baby girls.
+        Huzaifa means "compassionate" or "kind" and is a beautiful and meaningful name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Sahar
+        Ihsan
         </h5>
         <p className='meaning pb-3'>
-        Sahar means "dawn" or "morning" and is a beautiful and meaningful name for baby girls.
+        Ihsan means "excellence" or "perfection" and is a meaningful and unique name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Salma
+        Inaam
         </h5>
         <p className='meaning pb-3'>
-        Salma means "peaceful" or "safe" and is a popular and elegant name for baby girls.
+        Inaam means "reward" or "gift" and is a beautiful and unique name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Yusra
+        Irtaza
         </h5>
         <p className='meaning pb-3'>
-        Yusra means "prosperity" or "wealth" and is a beautiful and meaningful name for baby girls.
+        Irtaza means "beloved" or "dear" and is a meaningful and unique name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Dua
+        Jibran
         </h5>
         <p className='meaning pb-3'>
-        Dua means "prayer" or "supplication" and is a pretty and unique name for baby girls.
+        Jibran means "to create" or "to bring into existence" and is a beautiful and unique name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Hafsa
+        Junaid
         </h5>
         <p className='meaning pb-3'>
-        Hafsa was the name of one of the wives of the Prophet Muhammad and means "lioness" in Arabic. It is a beautiful and strong name for baby girls.
+        Junaid means "warrior" or "soldier" and is a strong and meaningful name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Iman
+        Khalid
         </h5>
         <p className='meaning pb-3'>
-        Iman means "faith" or "belief" and is a beautiful and meaningful name for baby girls.
+        Khalid means "eternal" or "immortal" and is a traditional and meaningful name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Yumna
+        Moosa
         </h5>
         <p className='meaning pb-3'>
-        Yumna means "right hand" or "blessed" and is a beautiful and meaningful name for baby girls.
+        Moosa means "prophet Moses" and is a meaningful and unique name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Madiha
+        Rayyan
         </h5>
         <p className='meaning pb-3'>
-        Madiha means "praiseworthy" or "commendable" and is a beautiful and meaningful name for baby girls.
+        Rayyan means "door to paradise" and is a unique and meaningful name for baby boys.
         </p>
         <h5 className='name pb-3'>
-        Noor
+        Rizwan
         </h5>
         <p className='meaning pb-3'>
-        Noor means "light" and is a simple yet elegant name for baby girls.
-        </p>
+        Rizwan means "pleasure" or "satisfaction" and is a beautiful and meaningful name for baby boys.
+         </p>
         <h5 className='name pb-3'>
-        Rukhsar
+        Safwan
         </h5>
         <p className='meaning pb-3'>
-        Rukhsar means "cheeks" or "face" and is a pretty and elegant name for baby girls.
+        Safwan means "rock" or "pure" and is a strong and unique name for baby boys.
         </p>
-        <h5 className='name pb-3'>
-        Zoya
-        </h5>
-        <p className='meaning pb-3'>
-        Zoya means "life" or "alive" and is a pretty and unique name for baby girls.
-        </p>
+        <div className='text-left para'>
+        I hope this list of 25 baby boy names has provided you with some inspiration for your website. Each of these names has its own unique meaning and beauty, and any one of them would be a wonderful choice for a baby boy. Remember to consider the cultural and historical significance of these names as well, as they can add even more depth and richness to your selection. Best of luck with your website and the important work you are doing to help parents find the perfect name for their little ones.
+      </div>
       </div>
     </div>
   )

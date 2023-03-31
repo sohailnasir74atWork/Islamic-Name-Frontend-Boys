@@ -8,7 +8,7 @@ const SearchCardABC = () => {
   return (
     <div className='ABC-card-container col flex-center'>
       <div class="card text-white bg-secondary mb-3" style={{maxWidth: "50rem"}}>
-  <div class="card-header"> GILRS NAMES </div>
+  <div class="card-header"> BOYS NAME </div>
   <div class="card-body">
   <ul className='ABC-container'>
   {alphabets.map(alphabet => (

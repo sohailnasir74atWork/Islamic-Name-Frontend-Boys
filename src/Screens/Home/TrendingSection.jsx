@@ -5,18 +5,18 @@ import { useGlobalState } from "../../GlobelState";
 import TrendingCardHome from './Cards/TrendingCardHome';
 import axios from 'axios';
 const TrendingSection = () => {
-  const [trendingGirls, setTrendingGirls] = useState([]);
-  const [quranicGirls, setQuranicGirls] = useState([]);
+  const [trendingBoys, setTrendingBoys] = useState([]);
+  const [quranicBoys, setQuranicBoys] = useState([]);
   const [allah, setAllah] = useState([]);
   const [muhammad, setMuhammad] = useState([]);
   const [loading, setLoading] = useState(true)
   const [isOpen, setIsOpen] = useState(false);
-  const [totalPagesTrendingGirls, setTotalPagesTrendingGirls] = useState(0);
-  const [totalPagesQuranicGirls, setTotalPagesQuranicGirls] = useState(0);
+  const [totalPagesTrendingBoys, setTotalPagesTrendingBoys] = useState(0);
+  const [totalPagesQuranicBoys, setTotalPagesQuranicBoys] = useState(0);
   const [totalPagesAllah, setTotalPagesAllah] = useState(0);
   const [totalPagesMuhammad, setTotalPagesMuhammad] = useState(0);
-  const [currentTrendingGirls, setCurrentTrendingGirls] = useState(1);
-  const [currentQuranicGirls, setCurrentQuranicGirls] = useState(1);
+  const [currentTrendingBoys, setCurrentTrendingBoys] = useState(1);
+  const [currentQuranicBoys, setCurrentQuranicBoys] = useState(1);
   const [currentAllah, setCurrentAllah] = useState(1);
   const [currentMuhammad, setCurrentMuhammad] = useState(1);
   const { activeBtnIndex, handleButtonClick } = useGlobalState();
@@ -27,9 +27,9 @@ const TrendingSection = () => {
     setLoading(true)
 
     if (activeBtnIndex === 0) {
-      setCurrentTrendingGirls(pageNumber);
+      setCurrentTrendingBoys(pageNumber);
     } else if (activeBtnIndex === 1) {
-      setCurrentQuranicGirls(pageNumber);
+      setCurrentQuranicBoys(pageNumber);
     } else if (activeBtnIndex === 2) {
       setCurrentAllah(pageNumber);
     } else if (activeBtnIndex === 3) {
@@ -37,11 +37,11 @@ const TrendingSection = () => {
     }
   };
 
-const getTrendingGirls = async () => {
+const getTrendingBoys = async () => {
   try {
-    const response = await axios.get(`${process.env.REACT_APP_URL_SERVER}/names/trending/girls?page=${currentTrendingGirls}`);
-    setTrendingGirls(response.data.allNames);
-    setTotalPagesTrendingGirls(response.data.totalPages);
+    const response = await axios.get(`${process.env.REACT_APP_URL_SERVER}/names/trending/boys?page=${currentTrendingBoys}`);
+    setTrendingBoys(response.data.allNames);
+    setTotalPagesTrendingBoys(response.data.totalPages);
     setLoading(false);
   } catch (error) {
     console.log(error);
@@ -49,11 +49,11 @@ const getTrendingGirls = async () => {
 }
 
 
-const getQuranicGirls = async () => {
+const getQuranicBoys = async () => {
   try {
-    const response = await axios.get(`${process.env.REACT_APP_URL_SERVER}/names/quranic/girls?page=${currentQuranicGirls}`);
-    setQuranicGirls(response.data.allNames);
-    setTotalPagesQuranicGirls(response.data.totalPages);
+    const response = await axios.get(`${process.env.REACT_APP_URL_SERVER}/names/quranic/boys?page=${currentQuranicBoys}`);
+    setQuranicBoys(response.data.allNames);
+    setTotalPagesQuranicBoys(response.data.totalPages);
     setLoading(false);
   } catch (error) {
     console.log(error);
@@ -84,7 +84,7 @@ const getMuhammad = async () => {
 
 const getData = async () => {
   try {
-    await Promise.all( [getTrendingGirls(), getQuranicGirls(), getAllah(), getMuhammad()]);
+    await Promise.all( [getTrendingBoys(), getQuranicBoys(), getAllah(), getMuhammad()]);
     setLoading(false);
   } catch (error) {
     console.log(error);
@@ -92,11 +92,11 @@ const getData = async () => {
 }
 
 useEffect(() => {
-  getTrendingGirls();
-}, [currentTrendingGirls]);
+  getTrendingBoys();
+}, [currentTrendingBoys]);
 useEffect(() => {
-  getQuranicGirls();
-}, [currentQuranicGirls]);
+  getQuranicBoys();
+}, [currentQuranicBoys]);
 useEffect(() => {
   getAllah();
 }, [currentAllah]);
@@ -123,8 +123,8 @@ useEffect(() => {
           <i className={`fa-solid fa-bars ${isOpen ? 'open' : ''}`}></i>
           {isOpen && (
             <div className="filter-tab">
-              <p onClick={() => handleButtonClick(0)}>Trending Names - Girls</p>
-              <p onClick={() => handleButtonClick(1)}>Quranic Names - Girls</p>
+              <p onClick={() => handleButtonClick(0)}>Trending Names - Boys</p>
+              <p onClick={() => handleButtonClick(1)}>Quranic Names - Boys</p>
               <p onClick={() => handleButtonClick(2)}>Allah's Name</p>
               <p onClick={() => handleButtonClick(3)}>Muhammads's Name</p>
               <p></p>
@@ -139,7 +139,7 @@ useEffect(() => {
                   className={`custimize-btn m-0  ${activeBtnIndex === 0 ? 'active' : ''}`}
                   onClick={() => handleButtonClick(0)}
                 >
-                  Trending Names - Girls
+                  Trending Names - Boys
                 </button>
               </div>
               <div className='col flex-center p-0 w-100'>
@@ -147,7 +147,7 @@ useEffect(() => {
                   className={`custimize-btn m-0  ${activeBtnIndex === 1 ? 'active' : ''}`}
                   onClick={() => handleButtonClick(1)}
                 >
-                  Quranic Names - Girls               </button>
+                  Quranic Names - Boys               </button>
               </div>
               <div className='col flex-center p-0 w-100 m-0'>
                 <button
@@ -175,22 +175,22 @@ useEffect(() => {
 </div>)}
           {!loading && <TrendingCardHome 
   data={
-        activeBtnIndex === 0 ? trendingGirls :
-        activeBtnIndex === 1 ? quranicGirls :
+        activeBtnIndex === 0 ? trendingBoys :
+        activeBtnIndex === 1 ? quranicBoys :
         activeBtnIndex === 2 ? allah :
         activeBtnIndex === 3 ? muhammad :
         null
   }
   totalPages={
-    activeBtnIndex === 0 ? totalPagesTrendingGirls :
-    activeBtnIndex === 1 ? totalPagesQuranicGirls :
+    activeBtnIndex === 0 ? totalPagesTrendingBoys :
+    activeBtnIndex === 1 ? totalPagesQuranicBoys :
     activeBtnIndex === 2 ? totalPagesAllah :
     activeBtnIndex === 3 ? totalPagesMuhammad :
     null
   }
   currentPage={
-    activeBtnIndex === 0 ? currentTrendingGirls :
-    activeBtnIndex === 1 ? currentQuranicGirls :
+    activeBtnIndex === 0 ? currentTrendingBoys :
+    activeBtnIndex === 1 ? currentQuranicBoys :
     activeBtnIndex === 2 ? currentAllah :
     activeBtnIndex === 3 ? currentMuhammad :
     null
