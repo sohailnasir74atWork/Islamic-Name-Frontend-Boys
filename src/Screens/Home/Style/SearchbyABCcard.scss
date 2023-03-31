@@ -1,0 +1,119 @@
+.ABC-card-container {
+    // padding: 10px;
+    width: 98%;
+    height: 100%;
+}
+
+.ABC-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: var(--text-font);
+    padding: 0px;
+}
+
+@media (max-width: 550px) {
+    .ABC-card-container {
+        width: 100%;
+        padding: 0px 10px;
+
+    }
+}
+
+.ABC-container li {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: var(--color-three);
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: var(--color-one);
+
+}
+
+@media (max-width: 550px) {
+    .ABC-container li {
+        padding: 5px;
+        margin: 5px;
+
+    }
+}
+
+.bg-secondary {
+    background-color: var(--color-one) !important;
+}
+
+.card-header {
+    // font-family: var(--text-font);
+    color: var(--color-three);
+    font-weight: 900;
+    font-size: 1.1rem;
+    min-height: 60px;
+    display: flex;
+    background-color: var(--color-one);
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 550px) {
+    .card-header {
+        min-height: 60px;
+        font-size: .9rem !important;
+    }
+}
+
+.ABC-container li:hover {
+    background: var(--color-one);
+    color: var(--color-three);
+    border-radius: 5px;
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 550px) {
+    .ABC-container li {
+        padding: 10px 15px;
+        margin:5px;
+        border-radius: 5px;
+        color: var(--color-three);
+        font-size: 1rem;
+        font-weight: bolder;
+        background-color: var(--color-one);
+    
+    }
+}
+
+@media (max-width: 550px) {
+    .card-body {
+        padding: 5px;
+    min-height: 10px;
+    }
+}
+.no-hover li {
+    background: var(--color-three);
+    color: var(--color-one);
+    border-radius: 5px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+.no-hover li:hover {
+    background: var(--color-three);
+    color: var(--color-one);
+    border-radius: 5px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-body {
+    background-color: white;
+    // min-height: 250px;
+    border-radius: 5px;
+    height: 100%;
+
+}
+@media (max-width: 550px) {
+    .no-hover li {
+        background: var(--color-three);
+        color: var(--color-one);
+}
+}

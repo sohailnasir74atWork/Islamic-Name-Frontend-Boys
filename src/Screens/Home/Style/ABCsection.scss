@@ -1,0 +1,23 @@
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+// .section-title-main{
+//     margin:0px
+// }
+@media (max-width: 550px) {
+    .cards-container{
+      flex-direction: column;
+      padding: 0px;
+  
+     }
+    }
+.w-50-ondestop{
+    width: 50%;
+}
+@media (max-width: 550px) {
+    .w-50-ondestop{
+        width: 100%;
+    }
+    }

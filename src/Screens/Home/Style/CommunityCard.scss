@@ -1,0 +1,84 @@
+.community-card{
+    min-height: 400px;
+    max-height: 400px;
+    width:49%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 0px;
+}
+@media (max-width: 550px) {
+    .community-card{
+        width:100%;
+        text-align: center;
+        padding: 0px;
+      
+       
+  
+     }
+    }
+.card-img-top{
+    min-height: 200px;
+    background-image: url(https://res.cloudinary.com/dgupxycnh/image/upload/v1678687010/Untitled_design_2_odtx7o.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-text{
+    max-height: 200px;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+@media (max-width: 550px) {
+    .card-text{
+    max-height: 100px;
+  
+     }
+    }
+.heading-en{
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: var(--heading-font);
+    padding:10px 0px;
+}
+.heading-ur{
+    font-size: 1.5rem;
+    text-align: right;
+    font-family: var(--urdu-font);
+    padding:10px 0px;
+}
+.text-en{
+    font-size: 1rem;
+    text-align: justify;
+    font-family: var(--text-font);
+    padding:10px 0px;
+}
+.text-ur{
+    font-size: 1rem;
+    text-align: right;
+    font-family: var(--urdu-font);
+    padding:10px 0px;
+    line-height: 2.5rem;
+}
+@media (max-width: 550px) {
+    .text-ur{
+        font-size: .7rem;
+  
+     }
+    }
+    @media (max-width: 550px) {
+        .heading-ur{
+            font-size: 1rem;
+      
+         }
+        }
+@media (max-width: 550px) {
+.heading-en{
+font-size: 1.2rem;
+          
+}
+ }
+ @media (max-width: 550px) {
+    .text-en{
+    font-size: .8rem;
+              
+    }
+     }

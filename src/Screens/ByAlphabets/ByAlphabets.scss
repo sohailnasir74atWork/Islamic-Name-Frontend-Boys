@@ -1,0 +1,25 @@
+.heading-by-abc{
+    margin: 40px 0px 0px 0px;
+}
+.d-0{
+    display: none;
+}
+.page-link.active, .active > .page-link {
+    z-index: 3;
+    color: var(--color-three);
+    background-color: var(--color-one);
+    border-color: grey;
+  }
+  .btn-cont{
+    max-height: 50px;
+    font-size: .8rem;
+
+  }
+
+  @media (max-width: 550px) {
+    .btn-cont{
+      max-height: 35px;
+    font-size: .5rem;
+  
+     }
+    }
